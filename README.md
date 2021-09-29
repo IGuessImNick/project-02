@@ -4,10 +4,12 @@
 A choose your own adventure game. User will be prompted with messages and allowed to choose their own pathway. Will employ authentication to allow users to save progress based on a created profile. Once story thread reaches conclusion, user will be prompted to return to the start.
 
 > homepage - Title, login, about(?)
+
 > "adventure" page - prompts served using node, express, and handlebars.js templates
+
 > Thread conclusion page - shows users their choices and how it played out (might be future development)
 
-> new tech implemented - novel.js(?) - a text based writing template that works with choose your own adventures.
+> new tech implemented - termynal - Lightweight and modern terminal animations using async/await
 
 ![Demo](./routeToDemo.png)
 
