@@ -1,0 +1,31 @@
+{
+  "name": "project-02",
+  "version": "1.0.0",
+  "description": "A choose your own adventure game. User will be prompted with messages and allowed to choose their own pathway. Will employ authentication to allow users to save progress based on a created profile. Once story thread reaches conclusion, user will be prompted to return to the start.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IGuessImNick/project-02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IGuessImNick/project-02/issues"
+  },
+  "homepage": "https://github.com/IGuessImNick/project-02#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  }
+}
