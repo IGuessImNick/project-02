@@ -24,7 +24,7 @@ Built with:
 
 ## Authors and Acknowledgment
 * Nick Skinner
-*
+* Carlo Joshua Serame
 * We would like to thank the UC Davis coding bootcamp team for answering all my questions regarding this project.
 
 ## Known Bugs
