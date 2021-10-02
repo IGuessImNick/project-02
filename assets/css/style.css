@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Italianno&family=Montserrat&display=swap');
+
+#title {
+    font-family: Italianno, cursive;
+    font-size: 4rem;
+    font-weight: bolder;
+    white-space: nowrap;
+}
+
+#sidebarTitle {
+    font-family: Italianno, cursive;
+    font-weight: bolder;
+}
+
+#mainTextBox {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.bodyText {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 670px) {
+    #title {
+        white-space: pre-wrap;
+    }
+}
