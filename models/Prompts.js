@@ -2,9 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 // const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class Prompts extends Model {
-
-}
+class Prompts extends Model {}
 
 Prompts.init(
     {
