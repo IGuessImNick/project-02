@@ -16,7 +16,7 @@ async function loginFormHandler(event) {
       });
   
       if (response.ok) {
-        document.location.replace('/dashboard');
+        document.location.replace('/homepage');
       } else {
         const message = await response.json();
         console.log(message);
