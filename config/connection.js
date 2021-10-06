@@ -19,7 +19,7 @@ if (process.env.JAWSDB_URL) {
 //     // previously port: 3006
 //     // =============================================
 
-      port: 3301
+      port: 3306
     }
   );
 }
