@@ -17,14 +17,14 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
 
   User.create({
-      username: req.body.username,
+      userName: req.body.username,
       password: req.body.password
   })
 
   .then(dbUserData => {
           req.session.save(() => {
               // req.session.user_id = dbUserData.id;
-              req.session.username = dbUserData.username;
+              req.session.username = dbUserData.userName;
               req.session.loggedIn = true;
 
               res.json(dbUserData);
@@ -41,7 +41,7 @@ router.post('/login', (req, res) => {
   User.findOne({
           where: 
           {
-              username: req.body.username
+              userName: req.body.username
           }
       }).then(dbUserData => {
           if (!dbUserData) {
