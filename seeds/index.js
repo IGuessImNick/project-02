@@ -3,29 +3,21 @@ const { User } = require('../models');
 const { Choices } = require('../models');
 const { Prompts } = require('../models');
 
-const userData = require('./userData.json');
-const userChoices = require('./choices.json');
-const userPrompts = require('./prompts.json');
+const userData = require('./userData');
+const userChoices = require('./choices');
+const userPrompts = require('./prompts');
+const seedUsers = require('./userData');
+const seedChoices = require('./choices');
+const seedPrompts = require('./prompts');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  await User.bulkCreate(userData, {
-    individualHooks: true,
-    returning: true,
-  });
-
-  await Choices.bulkCreate(userChoices, {
-    individualHooks: true,
-    returning: true,
-  });
-
-  await Prompts.bulkCreate(userPrompts, {
-    individualHooks: true,
-    returning: true,
-  });
-
+  await seedUsers();
+  await seedChoices();
+  await seedPrompts();
   process.exit(0);
+  
 };
 
 seedDatabase();
