@@ -7,74 +7,72 @@
         <title>TextAdventure Mockup</title>
         <!-- Bootstrap CSS -->
         <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="./assets/css/style.css" rel="stylesheet">
 
     </head>
 
     <body>
         <main>
             <header class="p-3 border-bottom d-flex align-items-center justify-content-around">
-                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                <a href="example.html" class="d-flex align-items-center text-dark text-decoration-none">
                 <!-- TODO: get page fanicon <svg></svg>-->  
-                <span id="title" class="fs-1 fw-bolder">A Text Adventure Game</span> 
+                <span id="title" class="">A Text Adventure Game</span> 
                 </a>
                 <nav class="navbar navbar-light bg-light">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="#">Menu</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-expand-xxl" id="navbarSupportedContent">
+                        <div class="collapse navbar-expand-xxl" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
+                            <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
-                          </li>
-                          <li class="nav-item dropdown">
+                            </li>
+                            <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Dropdown
+                                Dropdown
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
-                          </li>
+                            </li>
                         </ul>
-                      </div>
+                        </div>
+                    <a class="navbar-brand" href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     </div>
-                  </nav>
+                </nav>
             </header>
             <div id="wrapper" class="container-xl py-4 d-flex justify-content-start align-items-start">
-                <div class="container">
-                    <div id="historySidebar" class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 18vw;">
-                        <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-                        <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-                        <span class="fs-5 fw-semibold">List group</span>
+                <div id="historySidebar" class="mb-4 d-flex flex-column align-items-stretch bg-white" style="width: 18vw;">
+                    <a href="example.html" class="d-flex align-items-center p-3 link-dark text-decoration-none border-bottom">
+                    <span id="sidebarTitle" class="fs-3 fw-semibold">Action History</span>
+                    </a>
+                    <div class="list-group list-group-flush border-bottom scrollarea">
+                        <a href="#" class="list-group-item list-group-item-action active py-3 lh-tight" aria-current="true">
+                            <div class="d-flex flex-column w-100 align-items-center justify-content-between">
+                            <strong class="mb-1">Act 1</strong>
+                            <small>Wed</small>
+                            </div>
+                            <div class="col-10 mb-1 small bodyText">Some placeholder content in a paragraph below the heading and date.</div>
                         </a>
-                        <div class="list-group list-group-flush border-bottom scrollarea">
-                            <a href="#" class="list-group-item list-group-item-action active py-3 lh-tight" aria-current="true">
-                                <div class="d-flex w-100 align-items-center justify-content-between">
-                                <strong class="mb-1">List group item heading</strong>
-                                <small>Wed</small>
-                                </div>
-                                <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div>
-                            </a>
-                        </div>
                     </div>
                 </div>
-                <div class="b-example-divider"></div>
-                <div id="mainTextBox" class="p-5 mb-4 bg-light rounded-3" style="width: 100vw">
-                    <h1 class="display-5 fw-bold">Main Text Box</h1>
-                    <p class="col-md-8 fs-4">Text description</p>
-                    <button id="button 1" class="btn btn-primary btn-lg" type="button">A Button</button>
-                    <button id="button 2" class="btn btn-primary btn-lg" type="button">Another Button</button>
-                    <button id="button 3" class="btn btn-primary btn-lg" type="button">A Third Button</button>
-                    <button id="button 4" class="btn btn-primary btn-lg" type="button">Yet Another Button</button>
+                <div class="spacer"></div>
+                <div id="mainTextContainer" class="p-5 mb-4 bg-light rounded-3" style="width: 100vw">
+                    <h1 id="mainTextBox" class="display-5 fw-bold pb-3 border-bottom">Quest title, act stage, name of char talking, name of scene taking place</h1>
+                    <p class="col-md-8 fs-4 py-1 bodyText border-bottom">As you reach to open the treasure trove, it suddenly snaps back and morphs into a terrifying mimic! You must make a move!</p>
+                    <button id="button 1" class="btn btn-primary btn-lg" type="button">A decision</button>
+                    <button id="button 2" class="btn btn-primary btn-lg" type="button">Another decision</button>
+                    <button id="button 3" class="btn btn-primary btn-lg" type="button">A Third decision</button>
+                    <button id="button 4" class="btn btn-primary btn-lg" type="button">Yet Another decision</button>
                 </div>
             </div>
             <div class="container">
                 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                    <p class="col-md-4 mb-0 text-muted">© 2021 Company, Inc</p>
+                    <a href="https://choosealicense.com/licenses/" <p class="col-md-4 mb-0 text-muted">CHOOSE A LICENSE</p></a>
                 
                     <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                     <!-- TODO: get page fanicon--> <!--<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>-->
