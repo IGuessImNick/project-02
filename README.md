@@ -1,15 +1,9 @@
-# Project 2
+# Project 2 - Decide Your Fate.js
 
 ## Description
-A choose your own adventure game. User will be prompted with messages and allowed to choose their own pathway. Will employ authentication to allow users to save progress based on a created profile. Once story thread reaches conclusion, user will be prompted to return to the start.
+A choose your own adventure game that goes beyond simple javascript. This adventure is deployed server-side for lightning fast responses. User will be prompted with messages and allowed to choose their own pathway. Will employ authentication to allow users to save progress based on a created profile. Once story thread reaches conclusion, user will be prompted to return to the start.
 
-> homepage - Title, login, about(?)
-
-> "adventure" page - prompts served using node, express, and handlebars.js templates
-
-> Thread conclusion page - shows users their choices and how it played out (might be future development)
-
-> new tech implemented - termynal - Lightweight and modern terminal animations using async/await
+https://decide-your-fate-a-cyoa.herokuapp.com/
 
 ![Demo](./routeToDemo.png)
 
@@ -18,14 +12,23 @@ A choose your own adventure game. User will be prompted with messages and allowe
 (demo link)
 
 ## Operations
-
+* navigate to https://decide-your-fate-a-cyoa.herokuapp.com/
+* create a new user login with User Name and Password
+* log on and enjoy the game!
 
 ## Tech/Framework
 Built with:
+* javascript
+* sql database via JAWSDB
+* sessions
+* bcrypt password hashing
+* node.js
 
 
 ## Authors and Acknowledgment
 * Nick Skinner
+* Kelsey Duru
+* Tucker Lance
 * Carlo Joshua Serame
 * We would like to thank the UC Davis coding bootcamp team for answering all my questions regarding this project.
 
