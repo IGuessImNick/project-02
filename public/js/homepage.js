@@ -97,6 +97,122 @@ const promptNodes = [
         ]
     },
 
+    {
+        id: 4,
+        prompt: 'prompt 4',
+        options: [
+            {
+                content: 'option A4',
+                destination: 8
+            },
+            
+            {
+                content: 'option B4',
+                destination: 9
+            }
+
+        ]
+    },
+
+    {
+        id: 5,
+        prompt: 'prompt 5',
+        options: [
+            {
+                content: 'option A5',
+                destination: 10
+            },
+            
+            {
+                content: 'option B5',
+                destination: 11
+            }
+
+        ]
+    },
+
+    {
+        id: 6,
+        prompt: 'prompt 6',
+        options: [
+            {
+                content: 'option A6',
+                destination: 12
+            },
+            
+            {
+                content: 'option B6',
+                destination: 13
+            }
+
+        ]
+    },
+
+    {
+        id: 7,
+        prompt: 'prompt 7',
+        options: [
+            {
+                content: 'option A7',
+                destination: 14
+            },
+            
+            {
+                content: 'option B4',
+                destination: 15
+            }
+
+        ]
+    },
+
+    {
+        id: 8,
+        prompt: 'prompt 8',
+        options: []
+    },
+
+    {
+        id: 9,
+        prompt: 'prompt 9',
+        options: []
+    },
+
+    {
+        id: 10,
+        prompt: 'prompt 10',
+        options: []
+    },
+
+    {
+        id: 11,
+        prompt: 'prompt 11',
+        options: []
+    },
+
+    {
+        id: 12,
+        prompt: 'prompt 12',
+        options: []
+    },
+
+    {
+        id: 13,
+        prompt: 'prompt 13',
+        options: []
+    },
+
+    {
+        id: 14,
+        prompt: 'prompt 14',
+        options: []
+    },
+
+    {
+        id: 15,
+        prompt: 'prompt 15',
+        options: []
+    },
+
 ]
 
 startGame();
