@@ -14,11 +14,6 @@ if (process.env.JAWSDB_URL) {
       host: 'localhost',
       dialect: 'mysql',
 
-//     // =============================================
-//     // unsure if port should be same as ../server.js
-//     // previously port: 3006
-//     // =============================================
-
       port: 3306
     }
   );

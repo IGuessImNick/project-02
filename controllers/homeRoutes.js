@@ -6,14 +6,14 @@ router.get('/', withAuth, async (req, res) => {
   try {
     const userData = await User.findAll({
       attributes: { exclude: ['password'] },
-      order: [['name', 'ASC']],
+      order: [['userName', 'ASC']],
     });
 
     const users = userData.map((project) => project.get({ plain: true }));
 
     res.render('homepage', {
       users,
-      logged_in: req.session.logged_in,
+      loggedIn: req.session.loggedIn,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -21,8 +21,8 @@ router.get('/', withAuth, async (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect('/homepage');
+  if (req.session.loggedIn) {
+    res.redirect('/');
     return;
   }
 

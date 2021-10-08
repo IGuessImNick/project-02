@@ -1,26 +1,34 @@
-const { options } = require("../../models/User");
+// if (typeof window === 'object') {
+//     // Check if document is finally loaded
+//        document.addEventListener("DOMContentLoaded", function () {
+//            alert('Finished loading')
+//          });
+//       }
 
 const promptElement = document.getElementById('prompts');
 const choicesElement = document.getElementById('choices');
 
-// let state = {}
 
 function startGame () {
-    // state = {};
     showPromptNode(1)
 }
 
 function showPromptNode(promptNodeIndex) {
-    const promptNode = promptNodes.find(promptNode => promptNode.id = promptNodeIndex);
-    promptElement.innerText = promptNode.text;
+    if (!promptElement) {
+        return;
+    }
+    const promptNode = promptNodes.find(promptNode => promptNode.id === promptNodeIndex);
+    promptElement.innerText = promptNode.prompt;
+    
+    console.log(promptNode)
     while (choicesElement.firstChild) {
         choicesElement.removeChild(choicesElement.firstChild)
     }
 
     promptNode.options.forEach(option => {
-        if (showChoice(option)) {
+        if (showOption(option)) {
             const button = document.createElement('button');
-            button.innerText = option.text;
+            button.innerHTML = option.content;
             button.classList.add('btn');
             button.addEventListener('click', () => selectChoice(option));
             choicesElement.appendChild(button)
