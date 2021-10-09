@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
 /*, *::before, *::after {
     box-sizing: border-box;
 }*/
@@ -13,6 +14,10 @@ body {
     background:url('https://media1.giphy.com/media/MFabj1E9mgUsqwVWHu/giphy.gif?cid=790b76111106dfeeb1a006d8cc482be6a140ee9a210691e5&rid=giphy.gif&ct=g') repeat-y 100% 100% fixed;
     height:100%;
     width:100%;
+    color: #fff;
+    font-size: 96px;
+    font-family: 'Fira Mono', monospace;
+    letter-spacing: -7px;
 }
 
 /*.container {
@@ -42,3 +47,61 @@ body {
 .btn:hover {
     border-color: black;
 }*/
+h1{
+    animation: glitch 1s linear infinite;
+  }
+  
+  @keyframes glitch{
+    2%,64%{
+      transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+      transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+      transform: translate(0,0) skew(5deg); 
+    }
+  }
+  
+h1:before,
+h1:after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+  }
+  
+h1:before{
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+  
+  @keyframes glitchTop{
+    2%,64%{
+      transform: translate(2px,-2px);
+    }
+    4%,60%{
+      transform: translate(-2px,2px);
+    }
+    62%{
+      transform: translate(13px,-1px) skew(-13deg); 
+    }
+  }
+  
+h1:after{
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+  
+  @keyframes glitchBotom{
+    2%,64%{
+      transform: translate(-2px,0);
+    }
+    4%,60%{
+      transform: translate(-2px,0);
+    }
+    62%{
+      transform: translate(-22px,5px) skew(21deg); 
+    }
+  }
