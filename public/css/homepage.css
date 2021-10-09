@@ -4,13 +4,15 @@
 
 body {
     /*padding: 0;
-    margin: 0;*/
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
-    background:#000;
+    height: 100vh;*/
+    background:url('folder/https://media1.giphy.com/media/MFabj1E9mgUsqwVWHu/giphy.gif?cid=790b76111106dfeeb1a006d8cc482be6a140ee9a210691e5&rid=giphy.gif&ct=gimage.gif') repeat-y 100% 100% fixed;
+    height:100%;
+    width:100%;
 }
 
 /*.container {
