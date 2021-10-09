@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
-/*, *::before, *::after {
+/* , *::before, *::after {
     box-sizing: border-box;
 }*/
 
@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;*/
+    height: 100vh; */
     background:url('https://media1.giphy.com/media/MFabj1E9mgUsqwVWHu/giphy.gif?cid=790b76111106dfeeb1a006d8cc482be6a140ee9a210691e5&rid=giphy.gif&ct=g');
     background-size:100%;
     background-repeat: repeat-y;
