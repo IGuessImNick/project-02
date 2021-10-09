@@ -14,10 +14,7 @@ body {
     background:url('https://media1.giphy.com/media/MFabj1E9mgUsqwVWHu/giphy.gif?cid=790b76111106dfeeb1a006d8cc482be6a140ee9a210691e5&rid=giphy.gif&ct=g') repeat-y 100% 100% fixed;
     height:100%;
     width:100%;
-    color: #fff;
-    font-size: 96px;
     font-family: 'Fira Mono', monospace;
-    letter-spacing: -7px;
 }
 
 /*.container {
@@ -49,6 +46,9 @@ body {
 }*/
 h1{
     animation: glitch 1s linear infinite;
+    color: #fff;
+    font-size: 96px;
+    letter-spacing: -7px;
   }
   
   @keyframes glitch{
