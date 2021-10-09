@@ -5,7 +5,7 @@ A choose your own adventure game that goes beyond simple javascript. This advent
 
 https://decide-your-fate-a-cyoa.herokuapp.com/
 
-![Demo](./routeToDemo.png)
+![Demo](./public/images/demo.png)
 
 ## Video Demonstration
 
@@ -29,7 +29,7 @@ Built with:
 * Nick Skinner
 * Kelsey Duru
 * Tucker Lance
-* Carlo Joshua Serame
+* Javier Delcid
 * We would like to thank the UC Davis coding bootcamp team for answering all my questions regarding this project.
 
 ## Known Bugs
