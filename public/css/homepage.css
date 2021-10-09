@@ -50,7 +50,6 @@ h1{
     animation: glitch 1s linear infinite;
     color: #fff;
     font-size: 96px;
-    letter-spacing: -7px;
   }
   
   @keyframes glitch{
@@ -108,4 +107,3 @@ h1:after{
     }
   }
   
-  .h3 mb-3 fw-normal {letter-spacing: 5px; }
