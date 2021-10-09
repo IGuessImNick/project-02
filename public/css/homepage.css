@@ -1,6 +1,6 @@
 /*, *::before, *::after {
     box-sizing: border-box;
-}
+}*/
 
 body {
     padding: 0;
@@ -10,9 +10,10 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    background-image: url("https://cutewallpaper.org/21/free-fire-background/Free-Fire-Dragon-Wallpapers-Background-at-Movies-Monodomo.jpg");
 }
 
-.container {
+/*.container {
     width: 800px;
     max-width: 80%;
     padding: 10px;
@@ -38,4 +39,4 @@ body {
 
 .btn:hover {
     border-color: black;
-}
+}*/
