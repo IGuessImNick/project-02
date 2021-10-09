@@ -11,11 +11,14 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;*/
-    background:url('https://media1.giphy.com/media/MFabj1E9mgUsqwVWHu/giphy.gif?cid=790b76111106dfeeb1a006d8cc482be6a140ee9a210691e5&rid=giphy.gif&ct=g') repeat-y 100% 100% fixed;
+    background:url('https://media1.giphy.com/media/MFabj1E9mgUsqwVWHu/giphy.gif?cid=790b76111106dfeeb1a006d8cc482be6a140ee9a210691e5&rid=giphy.gif&ct=g');
+    background-image:url('folder/image.gif');
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
     height:100%;
     width:100%;
-    font-family: 'Fira Mono', monospace;
-}
+    }
 
 /*.container {
     width: 800px;
